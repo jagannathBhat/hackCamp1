@@ -39,6 +39,28 @@ body, html {
     width: 100%;
 }
 
+.anim {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    transform: translateY(60px);
+}
+
+.anim.animate {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: opacity 1s, transform 1s;
+    -moz-transition: opacity 1s, transform 1s;
+    -o-transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 1s;
+}
+
 .h1 {
     font: 400 96px sans-serif;
 }
