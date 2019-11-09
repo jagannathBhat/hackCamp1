@@ -10,7 +10,6 @@ a {
 }
 
 body, html {
-    background: #000;
     color: #fff;
     cursor: default;
     font: 300 16px sans-serif;
@@ -19,7 +18,16 @@ body, html {
 }
 
 body {
+    background: transparent;
     padding: 0px 24px;
+}
+
+html {
+    background-color: #000;
+    background-image: url('images/bggrass.svg'), url('images/bgstar.svg');
+    background-position: center bottom, center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .h1 {
@@ -27,7 +35,7 @@ body {
 }
 
 .h2 {
-    font: 600 48px sans-serif;
+    font: 600 72px sans-serif;
 }
 
 .h3 {
@@ -37,9 +45,10 @@ body {
 .oct {
     font-size: 18px;
     margin: 120px 0px;
+    max-width: 480px;
     min-width: 240px;
     text-align: center;
-    width: 30%;
+    width: 48%;
 }
 
 .oct img {
@@ -81,6 +90,43 @@ body {
     color: #fff;
     font: 400 36px sans-serif;
     margin-bottom: 48px;
+    max-width: 360px;
     padding: 48px;
+    vertical-align: middle;
     width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .h1 {
+        font: 400 120px sans-serif;
+    }
+    
+    .h2 {
+        font: 600 84px sans-serif;
+    }
+    
+    .h3 {
+        font: 400 36px sans-serif;
+    }
+
+    #swags {
+        width: 72%;
+    }
+
+    #buttons button {
+        margin: 0px 24px 48px;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    .h1 {
+        font: 400 160px sans-serif;
+        max-width: 72%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .h1 {
+        font: 400 216px sans-serif;
+    }
 }
