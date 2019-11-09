@@ -112,7 +112,7 @@
             }
             else {
                 db.collection("feedback").add({
-                    email: document.getElementById('emailInput').value
+                    email: document.getElementById('emailInput').value,
                     feedback: document.getElementById('feedback').value
                 }).then(function (docRef) {
                     console.log("Document written with ID: ", docRef.id)
