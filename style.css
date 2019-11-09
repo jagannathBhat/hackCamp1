@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://hackclub.com/fonts/Phantom_Sans_0.4/Regular.woff') format('woff'), url('https://hackclub.com/fonts/Phantom_Sans_0.4/Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://hackclub.com/fonts/Phantom_Sans_0.4/Bold.woff') format('woff'), url('https://hackclub.com/fonts/Phantom_Sans_0.4/Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10,6 +26,7 @@ a {
 }
 
 body, html {
+    background: #000;
     color: #fff;
     cursor: default;
     font: 300 16px sans-serif;
@@ -17,17 +34,13 @@ body, html {
     width: 100%;
 }
 
-body {
-    background: transparent;
-    padding: 0px 24px;
-}
-
-html {
+#bgwrap {
     background-color: #000;
     background-image: url('images/bggrass.svg'), url('images/bgstar.svg');
     background-position: center bottom, center top;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 6px 24px;
 }
 
 .h1 {
@@ -80,8 +93,23 @@ html {
     width: 100%;
 }
 
+#logo {
+    margin-top: 300px;
+    text-align: center;
+}
+
+#logo img {
+    max-width: 480px;
+    min-width: 240px;
+    width: 100%;
+}
+
+#logo .h2 {
+    font-family: "Phantom Sans";
+}
+
 #yesNo {
-    text-align: center;    
+    text-align: center;
 }
 
 #buttons button {
@@ -100,19 +128,15 @@ html {
     .h1 {
         font: 400 120px sans-serif;
     }
-    
     .h2 {
         font: 600 84px sans-serif;
     }
-    
     .h3 {
         font: 400 36px sans-serif;
     }
-
     #swags {
         width: 72%;
     }
-
     #buttons button {
         margin: 0px 24px 48px;
     }
