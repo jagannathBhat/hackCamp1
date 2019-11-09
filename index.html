@@ -43,9 +43,43 @@
     <section id="yesNo">
         <h3 class="h2">So can you?</h3>
         <div id="buttons">
-            <button id="no">No,<br><span>sign me up!</span></button><button id="yes">Yes, I can say no because...</button>
+            <button id="no" onclick="reveal(0)">No,<br><span>sign me up!</span></button><button onclick="reveal(1)" id="yes">Yes, I can say no because...</button>
         </div>
     </section>
+    <section id="org">
+        <h3 class="h2">Organized by</h3>
+        <div class="orgs">
+            <a href="https://hackclub.com"><img src="images/hackclub.svg" alt="Hack Club Logo"></a>
+        </div>
+        <div class="orgs">
+            <a href="https://mlh.io"><img src="images/mlh.svg" alt="MLH Logo"></a>
+        </div>
+    </section>
+    <div id="eventDetails">
+        <p id="close">Close</p>
+    </div>
+    <script>
+        let animate = () => {
+            document.querySelectorAll('.anim').forEach(e => {
+                if ((e.offsetTop - window.innerHeight / 1.2) < (window.scrollY || window.pageYOffset)) {
+                    e.classList.add('animate')
+                }
+            })
+        }
+        let reveal = (e) => {
+            document.getElementById('eventDetails').classList.add('reveal')
+            document.querySelector('html').classList.add('noScroll')
+            document.querySelector('body').classList.add('noScroll')
+        }
+        let close = () => {
+            document.getElementById('eventDetails').classList.remove('reveal')
+            document.querySelector('html').classList.remove('noScroll')
+            document.querySelector('body').classList.remove('noScroll')
+        }
+        animate()
+        window.onscroll = animate
+        window.onresize = animate
+    </script>
 </body>
 
 </html>
