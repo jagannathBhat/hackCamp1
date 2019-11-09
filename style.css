@@ -1,0 +1,86 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body, html {
+    background: #000;
+    color: #fff;
+    cursor: default;
+    font: 300 16px sans-serif;
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    padding: 0px 24px;
+}
+
+.h1 {
+    font: 400 96px sans-serif;
+}
+
+.h2 {
+    font: 600 48px sans-serif;
+}
+
+.h3 {
+    font: 400 24px sans-serif;
+}
+
+.oct {
+    font-size: 18px;
+    margin: 120px 0px;
+    min-width: 240px;
+    text-align: center;
+    width: 30%;
+}
+
+.oct img {
+    width: 100%;
+}
+
+#colab {
+    margin-left: auto;
+}
+
+#fun {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#food {
+    margin-right: auto;
+}
+
+#lot .h2 {
+    line-height: 168px;
+    text-align: center;
+}
+
+#swags {
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#yesNo {
+    text-align: center;    
+}
+
+#buttons button {
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font: 400 36px sans-serif;
+    margin-bottom: 48px;
+    padding: 48px;
+    width: 100%;
+}
