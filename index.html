@@ -62,7 +62,7 @@
         <p class="h2" id="yesNoTitle"></p>
         <form id="form" onsubmit="return false">
             <input type="email" name="email" id="emailInput" placeholder="Enter your email" required><br>
-            <textarea name="feedback" id="feedback" rows="6" placeholder="" required></textarea><br><input type="submit">
+            <textarea name="feedback" id="feedback" rows="6" placeholder="" required></textarea><br><input type="submit" id="submitButton">
         </form>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
@@ -87,6 +87,9 @@
             })
         }
         let reveal = (e) => {
+            document.getElementById('emailInput').style.display = 'inline-block'
+            document.getElementById('feedback').style.display = 'inline-block'
+            document.getElementById('submitButton').style.display = 'inline-block'
             document.getElementById('yesNoTitle').innerText = e == 0 ? 'Let\'s do this!' : 'What can we do to change your mind?'
             document.getElementById('feedback').setAttribute('placeholder', e == 0 ? 'Any message for us?' : 'Tell us why you\'re not interested and we\'ll try our best to make this event to your liking.')
             document.getElementById('form').addEventListener('submit', () => {
@@ -102,14 +105,21 @@
             document.querySelector('body').classList.remove('noScroll')
         }
         let sendData = (e) => {
+            document.getElementById('submitButton').innerText += '...'
             if (e === 0) {
                 db.collection("participants").add({
                     email: document.getElementById('emailInput').value,
                     feedback: document.getElementById('feedback').value
                 }).then(function (docRef) {
-                    console.log("Document written with ID: ", docRef.id)
+                    document.getElementById('yesNoTitle').innerText = 'Woohoo! We\'ll get in touch with you soon.'
+                    document.getElementById('emailInput').style.display = 'none'
+                    document.getElementById('feedback').style.display = 'none'
+                    document.getElementById('submitButton').style.display = 'none'
                 }).catch(function (error) {
-                    console.error("Error adding document: ", error)
+                    document.getElementById('yesNoTitle').innerText = 'Oops. There was some error in sending your data. Please try again later.'
+                    document.getElementById('emailInput').style.display = 'none'
+                    document.getElementById('feedback').style.display = 'none'
+                    document.getElementById('submitButton').style.display = 'none'
                 })
             }
             else {
@@ -117,9 +127,15 @@
                     email: document.getElementById('emailInput').value,
                     feedback: document.getElementById('feedback').value
                 }).then(function (docRef) {
-                    console.log("Document written with ID: ", docRef.id)
+                    document.getElementById('yesNoTitle').innerText = 'We\'ll get in touch with you soon.'
+                    document.getElementById('emailInput').style.display = 'none'
+                    document.getElementById('feedback').style.display = 'none'
+                    document.getElementById('submitButton').style.display = 'none'
                 }).catch(function (error) {
-                    console.error("Error adding document: ", error)
+                    document.getElementById('yesNoTitle').innerText = 'Oops. There was some error in sending your data. Please try again later'
+                    document.getElementById('emailInput').style.display = 'none'
+                    document.getElementById('feedback').style.display = 'none'
+                    document.getElementById('submitButton').style.display = 'none'
                 })
             }
         }
