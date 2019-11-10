@@ -16,7 +16,10 @@
    version="1.1"
    id="svg8"
    sodipodi:docname="bgstar.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/mnt/sda3/repos/github/hackCamp1/images/bgstar.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <linearGradient
@@ -48,9 +51,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.12768771"
-     inkscape:cx="64.535673"
-     inkscape:cy="1894.6233"
+     inkscape:zoom="0.063843855"
+     inkscape:cx="2603.8225"
+     inkscape:cy="1052.4588"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
