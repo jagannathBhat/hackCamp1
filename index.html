@@ -11,59 +11,63 @@
 
 <body>
     <div id="bgwrap">
-        <section id="canYou">
-            <h1 class="h1 anim">Can you say no to...</h1>
-            <div id="colab" class="oct">
-                <img src="images/colab.png" alt="People collaborating together" class="anim">
-                <h2 class="h3 anim">A chance to collaborate and create something wonderful!</h2>
-            </div>
-            <div id="fun" class="oct">
-                <img src="images/fun.png" alt="People with smiles on their faces" class="anim">
-                <h2 class="h3 anim">A fun weekend with innovators like you</h2>
-            </div>
-            <div id="food" class="oct">
-                <img src="images/food.png" alt="Food" class="anim">
-                <h2 class="h3 anim">Delicious food</h2>
-            </div>
-        </section>
-        <section id="lot">
-            <h2 class="h2 anim">and</h2>
-            <h2 class="h2 anim">a</h2>
-            <h2 class="h2 anim">loooootta</h2>
-        </section>
-        <section id="swags" class="oct">
-            <h2 class="h2 anim">SWAGS!</h2>
-            <img src="images/swags.png" alt="Swags" class="anim">
-        </section>
-        <section id="logo">
-            <img src="images/logo.svg" alt="Hack Camp Logo" class="anim">
-            <h1 class="h2 anim">Hack Camp 1.0</h1>
-            <p class="h3 anim">1-2 Feb 2020</p>
-            <p class="h3 anim">Integrated Startup Complex Kalamassery</p>
-        </section>
+        <div class="pageWrap">
+            <section id="canYou">
+                <h1 class="h1 anim">Can you say no to...</h1>
+                <div id="colab" class="oct">
+                    <img src="images/colab.png" alt="People collaborating together" class="anim">
+                    <h2 class="h3 anim">A chance to collaborate and create something wonderful!</h2>
+                </div>
+                <div id="fun" class="oct">
+                    <img src="images/fun.png" alt="People with smiles on their faces" class="anim">
+                    <h2 class="h3 anim">A fun weekend with innovators like you</h2>
+                </div>
+                <div id="food" class="oct">
+                    <img src="images/food.png" alt="Food" class="anim">
+                    <h2 class="h3 anim">Delicious food</h2>
+                </div>
+            </section>
+            <section id="lot">
+                <h2 class="h2 anim">and</h2>
+                <h2 class="h2 anim">a</h2>
+                <h2 class="h2 anim">loooootta</h2>
+            </section>
+            <section id="swags" class="oct">
+                <h2 class="h2 anim">SWAGS!</h2>
+                <img src="images/swags.png" alt="Swags" class="anim">
+            </section>
+            <section id="logo">
+                <img src="images/logo.svg" alt="Hack Camp Logo" class="anim">
+                <h1 class="h2 anim">Hack Camp 1.0</h1>
+                <p class="h3 anim">1-2 Feb 2020</p>
+                <p class="h3 anim">Integrated Startup Complex Kalamassery</p>
+            </section>
+        </div>
     </div>
-    <section id="yesNo">
-        <h3 class="h2 anim">So can you?</h3>
-        <div id="buttons" class="anim">
-            <button id="no">No,<br><span>sign me up!</span></button><button id="yes">Yes, I can say no because...</button>
+    <div class="pageWrap">
+        <section id="yesNo">
+            <h3 class="h2 anim">So can you?</h3>
+            <div id="buttons" class="anim">
+                <button id="no">No,<br><span>sign me up!</span></button><button id="yes">Yes, I can say no because...</button>
+            </div>
+        </section>
+        <section id="org">
+            <h3 class="h2 anim">Organized by</h3>
+            <div class="orgs">
+                <a href="https://hackclub.com"><img src="images/hackclub.svg" alt="Hack Club Logo" class="anim"></a>
+            </div>
+            <div class="orgs">
+                <a href="https://mlh.io"><img src="images/mlh.svg" alt="MLH Logo" class="anim"></a>
+            </div>
+        </section>
+        <div id="email">
+            <p id="close">Close</p>
+            <p class="h2" id="yesNoTitle"></p>
+            <form id="form" onsubmit="return false">
+                <input type="email" name="email" id="emailInput" placeholder="Enter your email" required><br>
+                <textarea name="feedback" id="feedback" rows="6" placeholder="" required></textarea><br><input type="submit" id="submitButton">
+            </form>
         </div>
-    </section>
-    <section id="org">
-        <h3 class="h2 anim">Organized by</h3>
-        <div class="orgs">
-            <a href="https://hackclub.com"><img src="images/hackclub.svg" alt="Hack Club Logo" class="anim"></a>
-        </div>
-        <div class="orgs">
-            <a href="https://mlh.io"><img src="images/mlh.svg" alt="MLH Logo" class="anim"></a>
-        </div>
-    </section>
-    <div id="email">
-        <p id="close">Close</p>
-        <p class="h2" id="yesNoTitle"></p>
-        <form id="form" onsubmit="return false">
-            <input type="email" name="email" id="emailInput" placeholder="Enter your email" required><br>
-            <textarea name="feedback" id="feedback" rows="6" placeholder="" required></textarea><br><input type="submit" id="submitButton">
-        </form>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
