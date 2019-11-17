@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,79 +12,40 @@
 </head>
 
 <body>
-    <div id="bgwrap">
-        <div class="pageWrap">
-            <section id="canYou">
-                <h1 class="h1 anim">Can you say no to...</h1>
-                <div id="colab" class="oct">
-                    <img src="images/colab.png" alt="People collaborating together" class="anim">
-                    <h2 class="h3 anim">A chance to collaborate and create something wonderful!</h2>
-                </div>
-                <div id="fun" class="oct">
-                    <img src="images/fun.png" alt="People with smiles on their faces" class="anim">
-                    <h2 class="h3 anim">A fun weekend with innovators like you</h2>
-                </div>
-                <div id="food" class="oct">
-                    <img src="images/food.png" alt="Food" class="anim">
-                    <h2 class="h3 anim">Delicious food</h2>
-                </div>
-            </section>
-            <section id="lot">
-                <h2 class="h2 anim">and</h2>
-                <h2 class="h2 anim">a</h2>
-                <h2 class="h2 anim">loooootta</h2>
-            </section>
-            <section id="swags" class="oct">
-                <h2 class="h2 anim">SWAGS!</h2>
-                <img src="images/swags.png" alt="Swags" class="anim">
-            </section>
-            <section id="logo">
-                <img src="images/logo.svg" alt="Hack Camp Logo" class="anim">
-                <h1 class="h2 anim">Hack Camp 1.0</h1>
-                <p class="h3 anim">1-2 Feb 2020</p>
-                <p class="h3 anim">Integrated Startup Complex Kalamassery</p>
-            </section>
+    <section id="header">
+        <div>
+            <img src="/images/logo.svg" alt="Hack Camp 1.0 Logo" class="anim">
+            <h1 class="anim">Hack Camp 1.0</h1>
+            <p class="sub anim">India's first Hack Camp</p>
+            <p class="anim">72-hour hackathon, Feb 1 & 2<br>Integrated Startup Complex, Kalamassery,<br>Kerala, India</p>
+            <p class="btnpgh anim"><a href="https://hackcamp.typeform.com/to/epFLlw" class="btn">Apply here</a></p>
         </div>
-    </div>
-    <div class="pageWrap">
-        <section id="yesNo">
-            <h3 class="h2 anim">So can you?</h3>
-            <div id="buttons" class="anim">
-                <button id="no">No,<br><span>sign me up!</span></button><button id="yes">Yes, I can say no because...</button>
-            </div>
-        </section>
-        <section id="org">
-            <h3 class="h2 anim">Organized by</h3>
-            <div class="orgs">
-                <a href="https://hackclub.com"><img src="images/hackclub.svg" alt="Hack Club Logo" class="anim"></a>
-            </div>
-            <div class="orgs">
-                <a href="https://mlh.io"><img src="images/mlh.svg" alt="MLH Logo" class="anim"></a>
-            </div>
-        </section>
-        <div id="email">
-            <p id="close">Close</p>
-            <p class="h2" id="yesNoTitle"></p>
-            <form id="form" onsubmit="return false">
-                <input type="email" name="email" id="emailInput" placeholder="Enter your email" required><br>
-                <textarea name="feedback" id="feedback" rows="6" placeholder="" required></textarea><br><input type="submit" id="submitButton">
-            </form>
-        </div>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+    </section>
+    <section id="aboutcamp">
+        <h2 class="anim">About Hack Camp</h2>
+        <p class="anim">Far far away, behind the word mountains, far from the countries vokalia and consonantia, there live the blind texts. Separated they live in bookmarksgrove right at the coast of the semantics, a large language ocean. A small river named duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    </section>
+    <section id="organizers">
+        <h2 class="anim">Organizers</h2>
+        <a class="organizer anim" href="https://hackclub.com" target="_blank">
+            <img src="/images/hackclub.svg" alt="Hack Club Logo">
+        </a>
+        <a class="organizer anim" href="https://mlh.io" target="_blank">
+            <img src="/images/mlh.svg" alt="MLH Logo">
+        </a>
+    </section>
+    <section id="sponsors">
+        <h2 class="anim">Sponsors</h2>
+        <a class="sponsor anim" href="https://github.com" target="_blank">
+            <img src="/images/github.svg" alt="GitHub Logo">
+            <h3>GitHub</h3>
+        </a>
+    </section>
+    <section id="sponsors">
+        <h2 class="anim">About Hack Club</h2>
+        <p class="anim">Hack club is a global network of programming clubs where members learn to code through tinkering and building projects. Computers give us superpowers. Hands on experiences are so important. Real-world experience with code is so important! Learning to code is your way into this world. Crossing this bridge unlocks the power to make stories, drawings, or wires into websites, games, robots, and things nobody but you imagine. It’s not about learning a programming framework—it’s about learning to teach yourself. Best of all, you can join a worldwide community of people doing the same. This hacker culture brings out the best in us all.</p>
+    </section>
     <script>
-        let firebaseConfig = {
-            apiKey: "AIzaSyC_n4PXfgiR4Feli0wNFvDYWAQ2DDgiFkk",
-            authDomain: "hackcamp1.firebaseapp.com",
-            databaseURL: "https://hackcamp1.firebaseio.com",
-            projectId: "hackcamp1",
-            storageBucket: "hackcamp1.appspot.com",
-            messagingSenderId: "578516146778",
-            appId: "1:578516146778:web:2b39580c3b4465fb281663"
-        }
-        firebase.initializeApp(firebaseConfig)
-        let db = firebase.firestore()
         let animate = () => {
             document.querySelectorAll('.anim').forEach(e => {
                 if ((e.offsetTop - window.innerHeight / 1.2) < (window.scrollY || window.pageYOffset)) {
@@ -90,66 +53,9 @@
                 }
             })
         }
-        let reveal = (e) => {
-            document.getElementById('emailInput').style.display = 'inline-block'
-            document.getElementById('feedback').style.display = 'inline-block'
-            document.getElementById('submitButton').style.display = 'inline-block'
-            document.getElementById('yesNoTitle').innerText = e == 0 ? 'Let\'s do this!' : 'What can we do to change your mind?'
-            document.getElementById('feedback').setAttribute('placeholder', e == 0 ? 'Any message for us?' : 'Tell us why you\'re not interested and we\'ll try our best to make this event to your liking.')
-            document.getElementById('form').addEventListener('submit', () => {
-                sendData(e)
-            })
-            document.getElementById('email').classList.add('reveal')
-            document.querySelector('html').classList.add('noScroll')
-            document.querySelector('body').classList.add('noScroll')
-        }
-        let close = () => {
-            document.getElementById('email').classList.remove('reveal')
-            document.querySelector('html').classList.remove('noScroll')
-            document.querySelector('body').classList.remove('noScroll')
-        }
-        let sendData = (e) => {
-            document.getElementById('submitButton').innerText += '...'
-            if (e === 0) {
-                db.collection("participants").add({
-                    email: document.getElementById('emailInput').value,
-                    feedback: document.getElementById('feedback').value
-                }).then(function (docRef) {
-                    document.getElementById('yesNoTitle').innerText = 'Woohoo! We\'ll get in touch with you soon.'
-                    document.getElementById('emailInput').style.display = 'none'
-                    document.getElementById('feedback').style.display = 'none'
-                    document.getElementById('submitButton').style.display = 'none'
-                }).catch(function (error) {
-                    document.getElementById('yesNoTitle').innerText = 'Oops. There was some error in sending your data. Please try again later.'
-                    document.getElementById('emailInput').style.display = 'none'
-                    document.getElementById('feedback').style.display = 'none'
-                    document.getElementById('submitButton').style.display = 'none'
-                })
-            }
-            else {
-                db.collection("feedback").add({
-                    email: document.getElementById('emailInput').value,
-                    feedback: document.getElementById('feedback').value
-                }).then(function (docRef) {
-                    document.getElementById('yesNoTitle').innerText = 'We\'ll get in touch with you soon.'
-                    document.getElementById('emailInput').style.display = 'none'
-                    document.getElementById('feedback').style.display = 'none'
-                    document.getElementById('submitButton').style.display = 'none'
-                }).catch(function (error) {
-                    document.getElementById('yesNoTitle').innerText = 'Oops. There was some error in sending your data. Please try again later'
-                    document.getElementById('emailInput').style.display = 'none'
-                    document.getElementById('feedback').style.display = 'none'
-                    document.getElementById('submitButton').style.display = 'none'
-                })
-            }
-        }
         animate()
         window.onscroll = animate
         window.onresize = animate
-        document.querySelectorAll('#buttons button').forEach((e, i) => {
-            e.addEventListener('click', () => reveal(i))
-        })
-        document.getElementById('close').addEventListener('click', () => close())
     </script>
 </body>
 
