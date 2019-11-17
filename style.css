@@ -43,6 +43,21 @@ body {
     padding: 6px 24px;
 }
 
+footer {
+    color: #ffffff77;
+    font: bold 18px 'Rubik', sans-serif;
+    margin: 12px 0px;
+}
+
+footer p {
+    line-height: 24px;
+}
+
+footer a {
+    border-bottom: 2px #ffffff77 dotted;
+    display: inline-block;
+}
+
 h1 {
     font: bold 60px 'Phantom Sans', sans-serif;
     margin: 0px;
