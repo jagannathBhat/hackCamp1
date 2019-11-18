@@ -148,6 +148,17 @@ section {
     color: #FF8B30;
 }
 
+.vl {
+    background: linear-gradient(transparent, #FF8B30, #FF8B30, #FF8B30, transparent);
+    height: 60px;
+    margin: 24px auto;
+    width: 3px;
+}
+
+.vl.long {
+    height: 120px;
+}
+
 #header {
     align-items: center;
     display: flex;
