@@ -176,14 +176,24 @@ section {
 
 #faq p {
     font-size: 0px;
+    line-height: 0px;
     -webkit-transition: font-size .3s;
     -moz-transition: font-size .3s;
     -o-transition: font-size .3s;
     transition: font-size .3s;
 }
 
+#faq p a {
+    border-bottom: none;
+}
+
 #faq p.reveal {
     font-size: inherit;
+    line-height: inherit;
+}
+
+#faq p.reveal a {
+    border-bottom: 3px dotted #fff;
 }
 
 #organizers .organizer, #sponsors .sponsor {
