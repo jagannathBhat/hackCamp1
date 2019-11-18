@@ -144,6 +144,10 @@ section {
     margin-top: 48px;
 }
 
+.highlight {
+    color: #FF8B30;
+}
+
 #header {
     align-items: center;
     display: flex;
