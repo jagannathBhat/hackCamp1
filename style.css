@@ -59,9 +59,6 @@ h2 {
 html {
     background-color: #002844;
     background-image: url('images/bgstar.svg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 p {
