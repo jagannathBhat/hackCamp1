@@ -168,7 +168,10 @@ section {
 }
 
 #faq h3 {
+    -ms-touch-action: none;
+    touch-action: none;
     color: #FF8B30;
+    cursor: pointer;
 }
 
 #faq p {
