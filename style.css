@@ -114,7 +114,7 @@ section {
     right: 10px;
 }
 
-.banner img {
+.banner svg {
     opacity: 0;
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -122,10 +122,11 @@ section {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
     vertical-align: top;
+    height: 100%;
     width: 100%;
 }
 
-.banner.animate img {
+.banner.animate svg {
     opacity: 1;
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -160,7 +161,8 @@ section {
     width: 120px;
 }
 
-.icons img {
+.icons svg {
+    height: 100%;
     width: 100%;
 }
 
@@ -184,9 +186,10 @@ section {
     margin-top: 60px;
 }
 
-#header img {
-    width: 82vw;
+#header svg {
+    height: 100%;
     max-width: 240px;
+    width: 82vw;
 }
 
 #header .sub {
@@ -239,7 +242,8 @@ section {
     width: 82vw;
 }
 
-#sponsors .sponsor img {
+#sponsors .sponsor svg {
+    height: 100%;
     width: 100%;
 }
 
