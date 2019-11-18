@@ -148,6 +148,17 @@ section {
     color: #FF8B30;
 }
 
+.icons {
+    display: inline-block;
+    margin: 48px 24px;
+    text-align: center;
+    width: 120px;
+}
+
+.icons img {
+    width: 100%;
+}
+
 .vl {
     background: linear-gradient(transparent, #FF8B30, #FF8B30, #FF8B30, transparent);
     height: 60px;
@@ -208,16 +219,23 @@ section {
     border-bottom: 3px dotted #fff;
 }
 
-#organizers .organizer, #sponsors .sponsor {
+#faq .item {
     display: inline-block;
-    margin: 12px;
-    max-width: 120px;
+    width: 36vw;
+    min-width: 240px;
+    vertical-align: top;
+}
+
+#sponsors .sponsor {
+    display: inline-block;
+    margin: 24px;
+    max-width: 240px;
     vertical-align: middle;
     width: 82vw;
 }
 
-#organizers .organizer {
-    max-width: 240px;
+#sponsors .sponsor img {
+    width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
