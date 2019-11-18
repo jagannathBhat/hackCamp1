@@ -29,6 +29,10 @@ a {
     text-decoration: inherit;
 }
 
+a[href="mailto:help@hackcamp.tech"] {
+    border-bottom: 3px dotted #fff;
+}
+
 body, html {
     color: #fff;
     cursor: default;
@@ -135,8 +139,8 @@ section {
 .btn {
     background: #FF8B30;
     border-radius: 12px;
-    font: bold 30px 'Rubik', sans-serif;
-    padding: 12px;
+    font: bold 24px 'Rubik', sans-serif;
+    padding: 18px;
 }
 
 .btnpgh {
@@ -161,6 +165,22 @@ section {
     font: bold 30px 'Rubik', sans-serif;
     letter-spacing: 6px;
     margin: 0px 0px 36px 0px;
+}
+
+#faq h3 {
+    color: #FF8B30;
+}
+
+#faq p {
+    font-size: 0px;
+    -webkit-transition: font-size .3s;
+    -moz-transition: font-size .3s;
+    -o-transition: font-size .3s;
+    transition: font-size .3s;
+}
+
+#faq p.reveal {
+    font-size: inherit;
 }
 
 #organizers .organizer, #sponsors .sponsor {

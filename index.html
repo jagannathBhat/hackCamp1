@@ -29,37 +29,29 @@
     <section id="aboutcamp">
         <h2 class="anim">About Hack Camp</h2>
         <p class="anim">Far far away, behind the word mountains, far from the countries vokalia and consonantia, there live the blind texts. Separated they live in bookmarksgrove right at the coast of the semantics, a large language ocean. A small river named duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    </section id="aboutcamp">
-    <h2 class="anim">FAQ</h2>
-    <h3 class="anim"><span style="color:#FF8B30">What is Hack Camp?</span></h3>
-    <p class="anim">Hack Camp is HackClub's first and premier hackathon in India.At Hack Camp you will build projects that inspire, projects that will educate and projets that innovate. Happy Hacking!</p>
-
-    <h3 class="anim"><span style="color:#FF8B30">What is a Hackathon?</span></h3>
-    <p class="anim">A hackathon can be best described as an “invention marathon”, or in simple words hackathons are about bringing your crazy ideas to reality. It’s an event where any tech-enthusiast, regardless of their individual field can come & participate to learn, build & share their creations over the course of a weekend, in a relaxed & productive environment. Hackathons are simply a venue for self-expression & creativity, where people come together & transform their thoughts into reality, through technology. </p>
-
-    <h3 class="anim"><span style="color:#FF8B30">How big a team can be?</span></h3>
-    <p class="anim">The maximum team size is four and lone rangers are also welcome. Participants selected on an individual basis and can team up on the spot as well.</p>
-
-    <h3 class="anim"><span style="color:#FF8B30">Who all can participate?</span></h3>
-    <p class="anim">This is a student hackathon and only students are allowed to participate. You’ll be required to verify at the event by showing your student ID card. </p>
-
-    <h3 class="anim"><span style="color:#FF8B30">I'm a newbie can I hack?</span></h3>
-    <p class="anim">Of course you can! We at Hack Camp ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community. </p>
-
-    <h3 class="anim"><span style="color:#FF8B30">What about Internet?</span></h3>
-    <p class="anim">You're advised to bring your own broadband/hotspot device as we can arrange for atmost one connection per team. </p>
-
-    <h3 class="anim"><span style="color:#FF8B30">Can I start hacking before the event?</span></h3>
-    <p class="anim">No. In the interest of fairness, students should not be working on their projects before Hack Camp begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand!</p>
-
-    <h3 class="anim"><span style="color:#FF8B30">Do I have to be qualified?</span></h3>
-    <p class="anim">If you love to code, you are more than welcome to participate in the Hackathon. Though we may screen applications to maintain high standards. </p>
-
-    <h3 class="anim"><span style="color:#FF8B30">Wait,My question isn't here?</span></h3>
-    <p class="anim">If you couldn't find an answer to your question please do go to the Contact US part of the page and get in touch with us.</p>
-
-
-    <section id="aboutcamp">
+    </section>
+    <section id="faq">
+        <h2 class="anim">FAQ</h2>
+        <h3 class="anim">What is Hack Camp?</h3>
+        <p class="anim">Hack Camp is HackClub's first and premier hackathon in India.At Hack Camp you will build projects that inspire, projects that will educate and projets that innovate. Happy Hacking!</p>
+        <h3 class="anim">What is a Hackathon?</h3>
+        <p class="anim">A hackathon can be best described as an “invention marathon”, or in simple words hackathons are about bringing your crazy ideas to reality. It’s an event where any tech-enthusiast, regardless of their individual field can come & participate to learn, build & share their creations over the course of a weekend, in a relaxed & productive environment. Hackathons are simply a venue for self-expression & creativity, where people come together & transform their thoughts into reality, through technology. </p>
+        <h3 class="anim">How big a team can be?</h3>
+        <p class="anim">The maximum team size is four and lone rangers are also welcome. Participants selected on an individual basis and can team up on the spot as well.</p>
+        <h3 class="anim">Who all can participate?</h3>
+        <p class="anim">This is a student hackathon and only students are allowed to participate. You’ll be required to verify at the event by showing your student ID card. </p>
+        <h3 class="anim">I'm a newbie can I hack?</h3>
+        <p class="anim">Of course you can! We at Hack Camp ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community. </p>
+        <h3 class="anim">What about Internet?</h3>
+        <p class="anim">You're advised to bring your own broadband/hotspot device as we can arrange for atmost one connection per team. </p>
+        <h3 class="anim">Can I start hacking before the event?</h3>
+        <p class="anim">No. In the interest of fairness, students should not be working on their projects before Hack Camp begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand!</p>
+        <h3 class="anim">Do I have to be qualified?</h3>
+        <p class="anim">If you love to code, you are more than welcome to participate in the Hackathon. Though we may screen applications to maintain high standards. </p>
+        <h3 class="anim">Wait, my question isn't here?</h3>
+        <p class="anim">If you couldn't find an answer to your question please do send your queries to <a href="mailto:help@hackcamp.tech">help@hackcamp.tech</a>.</p>
+    </section>
+    <section id="codeofconduct">
         <h2 class="anim">Code Of Conduct</h2>
         <p class="btnpgh anim"><a href="https://hackclub.com/conduct/" target="_blank" class="btn">Code Of Conduct</a></p>
     </section>
@@ -95,9 +87,17 @@
                 }
             })
         }
+        let faqreveal = (e) => {
+            e.nextElementSibling.classList.add('reveal')
+        }
         animate()
         window.onscroll = animate
         window.onresize = animate
+        document.querySelectorAll('#faq h3').forEach(e => {
+            e.addEventListener('click', () => {
+                faqreveal(e)
+            })
+        })
     </script>
 </body>
 
