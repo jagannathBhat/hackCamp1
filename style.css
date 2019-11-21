@@ -118,7 +118,7 @@ section {
     right: 10px;
 }
 
-.banner svg {
+.banner img {
     opacity: 0;
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -130,7 +130,7 @@ section {
     width: 100%;
 }
 
-.banner.animate svg {
+.banner.animate img {
     opacity: 1;
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -165,7 +165,7 @@ section {
     width: 120px;
 }
 
-.icons svg {
+.icons img {
     height: 100%;
     width: 100%;
 }
@@ -190,7 +190,7 @@ section {
     margin-top: 60px;
 }
 
-#header svg {
+#header img {
     height: 100%;
     max-width: 240px;
     width: 82vw;
@@ -246,7 +246,7 @@ section {
     width: 82vw;
 }
 
-#sponsors .sponsor svg {
+#sponsors .sponsor img {
     height: 100%;
     width: 100%;
 }
