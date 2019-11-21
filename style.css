@@ -38,6 +38,10 @@ a[href="mailto:help@hackcamp.tech"] {
     border-bottom: 3px dotted #fff;
 }
 
+a.btn[href="mailto:help@hackcamp.tech"] {
+    border-bottom: none;
+}
+
 body, html {
     color: #fff;
     cursor: default;
