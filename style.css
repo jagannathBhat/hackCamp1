@@ -146,6 +146,7 @@ section {
 .btn {
     background: #FF8B30;
     border-radius: 12px;
+    display: inline-block;
     font: bold 24px 'Rubik', sans-serif;
     padding: 18px;
 }
