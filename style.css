@@ -238,6 +238,19 @@ section {
     vertical-align: top;
 }
 
+#team img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+#team .item {
+    display: inline-block;
+    margin: 24px 48px;
+    max-width: 180px;
+    width: 84vw;
+}
+
 #sponsors .sponsor {
     display: inline-block;
     margin: 24px;
