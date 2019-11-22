@@ -17,6 +17,7 @@
 @font-face {
   font-family: 'Rubik';
   src: url(docs/rubik.ttf);
+  font-display: swap;
 }
 
 * {
