@@ -145,7 +145,7 @@ section {
 }
 
 .btn {
-    background: #FF8B30;
+    background: #ff5b2b;
     border-radius: 12px;
     display: inline-block;
     font: bold 24px 'Rubik', sans-serif;
@@ -157,7 +157,7 @@ section {
 }
 
 .highlight {
-    color: #FF8B30;
+    color: #ff5b2b;
 }
 
 .icons {
@@ -173,7 +173,7 @@ section {
 }
 
 .vl {
-    background: linear-gradient(transparent, #FF8B30, #FF8B30, #FF8B30, transparent);
+    background: linear-gradient(transparent, #ff5b2b, #ff5b2b, #ff5b2b, transparent);
     height: 60px;
     margin: 24px auto;
     width: 3px;
@@ -207,7 +207,7 @@ section {
 #faq h3 {
     -ms-touch-action: none;
     touch-action: none;
-    color: #FF8B30;
+    color: #ff5b2b;
     cursor: pointer;
 }
 
