@@ -291,17 +291,17 @@ section {
 }
 
 .banner {
-	max-width: 36vw;
 	position: absolute;
 	top: 0px;
-	width: 180px;
 }
 
 .banner#banner-hackclub {
+	max-width: 36vw;
 	left: 10px;
 }
 
 .banner#banner-mlh {
+	max-width: 30vw;
 	right: 10px;
 }
 
@@ -389,7 +389,7 @@ section {
 	flex: 1;
 	height: 100vh;
 	justify-content: center;
-	margin-top: 180px;
+	margin-top: 120px;
 }
 
 #header img {
@@ -467,6 +467,14 @@ section {
 }
 
 @media only screen and (min-width: 600px) {
+	.banner#banner-hackclub {
+		max-wdith: 18vw;
+	}
+	
+	.banner#banner-mlh {
+		max-wdith: 12vw;
+	}
+	
 	#header {
 		margin-top: 0px;
 	}
