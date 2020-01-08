@@ -357,6 +357,7 @@ section {
 	display: inline-block;
 	margin: 48px 24px;
 	text-align: center;
+	vertical-align: top;
 	width: 120px;
 }
 
