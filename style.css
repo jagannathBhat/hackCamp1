@@ -440,13 +440,15 @@ section {
 	vertical-align: top;
 }
 
-#team img {
+#team img,
+#speakers img {
 	border-radius: 50%;
 	height: 100%;
 	width: 100%;
 }
 
-#team .item {
+#team .item,
+#speakers .item {
 	display: inline-block;
 	margin: 24px 48px;
 	max-width: 180px;
@@ -468,13 +470,13 @@ section {
 
 @media only screen and (min-width: 600px) {
 	.banner#banner-hackclub {
-		max-wdith: 18vw;
+		max-width: 18vw;
 	}
-	
+
 	.banner#banner-mlh {
-		max-wdith: 12vw;
+		max-width: 12vw;
 	}
-	
+
 	#header {
 		margin-top: 0px;
 	}
