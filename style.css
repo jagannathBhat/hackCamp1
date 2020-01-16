@@ -6,8 +6,8 @@ body {
 	margin: 0;
 }
 #devfolio-apply-now {
-    -ms-flex-align: center;
-    -webkit-box-align: right;
+    -ms-flex-align: left;
+    -webkit-box-align: left;
     align-items: center;
     background-color: #3770FF;
     border-radius: 3px;
