@@ -8,7 +8,7 @@ body {
 #devfolio-apply-now {
     -ms-flex-align: left;
     -webkit-box-align: left;
-    align-items: center;
+    align-items:left;
     background-color: #3770FF;
     border-radius: 3px;
     border: none;
