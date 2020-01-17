@@ -44,22 +44,31 @@
 </head>
 
 <body>
-    <div class="banner" id="banner-hackclub">
+    <div class="banner" id="banner-hackclub" style="width:19%;">
         <a href="https://hackclub.com/">
             <img src="images/bannerhackclub.svg" alt="Hack Club Banner">
         </a>
     </div>
-    <div class="banner" id="banner-mlh">
+        
+    <div class="banner" id="banner-mlh" style="width:10%;">
         <a href="https://mlh.io/">
             <img src="images/bannermlh.svg" alt="MLH Banner">
         </a>
+    <!--a 
+    id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:10px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=yellow" target="_blank">
+    <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-yellow.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%">
+    </a-->
     </div>
+    
     <section id="header">
         <div>
             <img src="images/logo.svg" alt="Hack Camp Logo">
             <h1 class="anim">Hack Camp</h1>
             <h3 class="anim">A Hack Club Original Hackathon</h3>
-            <div class="btnpgh anim"><a href="https://hackcamp.typeform.com/to/epFLlw" class="btn">Apply here</a></div>
+            <!--<div class="btnpgh anim"><a href="https://hackcamp.typeform.com/to/epFLlw" class="btn">Apply here</a></div>-->
+            <div class="btnpgh anim" align="center">
+            <button id="devfolio-apply-now" ><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
+            </div>
             <br>
             <p class="anim"><font size="4"><img src ="images/calendar.svg" style="width:3%;"> Feb 8 & 9<br><img src ="images/placeholder.svg" style="width:4%;"> Integrated Startup Complex, Kalamassery,Kerala, India</p>
         </div>
@@ -72,8 +81,8 @@
             <p class="highlight">36 Hours</p>
         </div>
         <div class="icons anim">
-            <img src="images/rupee.svg" alt="Cash Icon">
-            <p class="highlight">Cash prize</p>
+            <img src="images/gift.svg" alt="Gift Icon">
+            <p class="highlight">Exciting prizes</p>
         </div>
         <div class="icons anim">
             <img src="images/swags.svg" alt="Swags Icon">
@@ -212,8 +221,8 @@
             <p class="anim">A hackathon can be best described as an “invention marathon”, or in simple words hackathons are about bringing your crazy ideas to reality. It’s an event where any tech-enthusiast, regardless of their individual field can come & participate to learn, build & share their creations over the course of a weekend, in a relaxed & productive environment. Hackathons are simply a venue for self-expression & creativity, where people come together & transform their thoughts into reality, through technology. </p>
         </div>
         <div class="item">
-            <h3 class="anim">I'm a newbie can I hack?</h3>
-            <p class="anim">Of course you can! We at Hack Camp ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community. </p>
+            <h3 class="anim">What about Internet?</h3>
+            <p class="anim">You're advised to bring your own broadband/hotspot device as we can arrange for atmost one connection per team. </p>
         </div>
         <div class="item">
             <h3 class="anim">How big a team can be?</h3>
@@ -228,8 +237,8 @@
             <p class="anim">If you love to code, you are more than welcome to participate in the Hackathon. Though we may screen applications to maintain high standards. </p>
         </div>
         <div class="item">
-            <h3 class="anim">What about Internet?</h3>
-            <p class="anim">You're advised to bring your own broadband/hotspot device as we can arrange for atmost one connection per team. </p>
+            <h3 class="anim">I'm a newbie can I hack?</h3>
+            <p class="anim">Of course you can! We at Hack Camp ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community. </p>
         </div>
         <div class="item">
             <h3 class="anim">Can I start hacking before the event?</h3>
@@ -436,19 +445,50 @@
 
 
     <section id="sponsors">
-        <h2 class="anim">Sponsors</h2>
+        <h1 class="anim">Title Sponsors</h1>
         <a class="sponsor anim" href="https://hackclub.com" target="_blank">
-            <img src="images/hackclub.svg" alt="Hack Club Logo">
+            <img src="images/hc.svg" alt="Hack Club Logo">
         </a>
-        <a class="sponsor anim" href="https://mlh.io" target="_blank">
-            <img src="images/sticker.png" alt="Sticker Mule Logo">
+        <a class="sponsor anim" href="https://mlh.io" target="_blank" style="width:150px;">
+            <img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg" alt="MLH Logo">
         </a>
         <a class="sponsor anim" href="https://github.com" target="_blank">
-            <img src="images/github.svg" alt="GitHub Logo">
+            <img src="images/github.png" alt="GitHub Logo">
         </a>
+        <!--
          <a class="sponsor anim" href="https://cloudsploit.com/" target="_blank">
-            <img src="images/cloudsploit.png" alt="Cloudsploit Logo">
+            <img src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="Cloudsploit Logo">
+        </a>-->
+        <h2 class="anim">Other Sponsors</h2>
+        <a class="sponsor anim" href="https://startupmission.kerala.gov.in/" target="_blank" style="width:180px;">
+            <img src="images/ksum.png" alt="KSUM Logo">
         </a>
+        <a class="sponsor anim" href="https://startupmission.kerala.gov.in/" target="_blank" style="width:180px;">
+            <img src="https://static.mlh.io/brand-assets/sponsors/sticker-mule/sticker-mule-logo.svg" alt="KSUM Logo">
+        </a>
+        <!--<a class="sponsor anim" href="https://codingblocks.com" target="_blank" style="width:150px;">
+            <img src="images/CB.png" alt="Coding Blocks Logo">
+        </a>-->
+         <a class="sponsor anim" href="https://balsamiq.com" target="_blank">
+            <img src="https://media.balsamiq.com/files/company/balsamiq-logo-noborder-print.svg" alt="Balsamiq Logo" style="width:180px;">
+        </a>
+        <a class="sponsor anim" href="https://community.makergram.com/" target="_blank" style="width:180px">
+            <img src="https://www.matrix.one/assets/imgs/projects/hackster-logo.png" alt="Hackster Logo">
+        </a>
+        <a class="sponsor anim" href="https://devfolio.co" target="_blank" style="width:180px;">
+            <img src="images/devfolio.svg" alt="Devfolio Logo">
+        </a>
+        <br>
+        <a class="sponsor anim" href="https://codingblocks.com" target="_blank" style="width:120px;">
+            <img src="images/CB.png" alt="Coding Blocks Logo">
+        </a>
+        <a class="sponsor anim" href="https://cloudsploit.com/" target="_blank" style="width:120px;">
+            <img src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="Cloudsploit Logo">
+        </a>
+        <a class="sponsor anim" href="https://cloudsploit.com/" target="_blank" style="width:120px;">
+            <img src="images/matic.png" alt="Cloudsploit Logo">
+        </a>
+
         <div class="btnpgh anim"><a href="mailto:help@hackcamp.tech" target="_blank" class="btn">Become a Sponsor</a></div>
         <p><a href="docs/sponsorship_prospectus.pdf" target="_blank" class="anim highlight">Download Sponsorship Prospectus</a></p>
     </section>
@@ -471,6 +511,26 @@
         </footer>
     </section>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    let devfolioOptions = {
+        buttonSelector: '#devfolio-apply-now',
+        key: 'hack-camp',
+    }
+
+    let script = document.createElement('script');
+    script.src = "https://apply.devfolio.co";
+    document.head.append(script);
+
+    script.onload = function () {
+        new Devfolio(devfolioOptions);
+    }
+
+    script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+    }
+});
         let animate = () => {
             document.querySelectorAll('.anim, .banner').forEach(e => {
                 if ((e.offsetTop - window.innerHeight / 1.2) < (window.scrollY || window.pageYOffset)) {
