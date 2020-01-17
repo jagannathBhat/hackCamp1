@@ -1,130 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/png" sizes="16x16" href="images/logo16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logo32.png" />
+		<link rel="manifest" href="manifest.json" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			name="description"
+			content="February 2020, Create anything you can imagine with code, electronics, 3D models, and more at Kerala, India."
+		/>
+		<meta
+			property="og:description"
+			content="February 2020, Create anything you can imagine with code, electronics, 3D models, and more at Kerala, India."
+		/>
+		<meta property="og:image" content="images/card.png" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Hack Camp" />
+		<meta property="og:title" content="Hack Camp - Kerala, India" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://hackcamp.tech/" />
+		<meta name="theme-color" content="#002844" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:description"
+			content="February 2020, Create anything you can imagine with code, electronics, 3D models, and more at Kerala, India."
+		/>
+		<meta name="twitter:domain" content="https://hackcamp.tech/" />
+		<meta name="twitter:image" content="images/card.png" />
+		<meta name="twitter:site" content="@hackclubindia" />
+		<meta name="twitter:title" content="Hack Camp - Kerala, India" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" content="#002844" />
+		<meta name="application-name" content="Hack Camp" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<meta name="apple-mobile-web-app-title" content="Hack Camp" />
+		<meta name="theme-color" content="#e42d42" />
+		<link rel="apple-touch-icon" sizes="48x48" href="images/logo48.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/logo72.png" />
+		<link rel="apple-touch-icon" sizes="96x96" href="images/logo96.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/logo144.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="images/logo192.png" />
+		<link rel="apple-touch-icon" sizes="256x256" href="images/logo256.png" />
+		<link rel="apple-touch-icon" sizes="384x384" href="images/logo384.png" />
+		<link rel="apple-touch-icon" sizes="512x512" href="images/logo512.png" />
+		<title>Hack Camp</title>
+		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+	</head>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo32.png">
-    <link rel="manifest" href="manifest.json">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="February 2020, Create anything you can imagine with code, electronics, 3D models, and more at Kerala, India.">
-    <meta property="og:description" content="February 2020, Create anything you can imagine with code, electronics, 3D models, and more at Kerala, India.">
-    <meta property="og:image" content="images/card.png">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Hack Camp">
-    <meta property="og:title" content="Hack Camp - Kerala, India">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hackcamp.tech/">
-    <meta name="theme-color" content="#002844">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="February 2020, Create anything you can imagine with code, electronics, 3D models, and more at Kerala, India.">
-    <meta name="twitter:domain" content="https://hackcamp.tech/">
-    <meta name="twitter:image" content="images/card.png">
-    <meta name="twitter:site" content="@hackclubindia">
-    <meta name="twitter:title" content="Hack Camp - Kerala, India">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#002844">
-    <meta name="application-name" content="Hack Camp">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Hack Camp">
-    <meta name="theme-color" content="#e42d42">
-    <link rel="apple-touch-icon" sizes="48x48" href="images/logo48.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/logo72.png">
-    <link rel="apple-touch-icon" sizes="96x96" href="images/logo96.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/logo144.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="images/logo192.png">
-    <link rel="apple-touch-icon" sizes="256x256" href="images/logo256.png">
-    <link rel="apple-touch-icon" sizes="384x384" href="images/logo384.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="images/logo512.png">
-    <title>Hack Camp</title>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-</head>
+	<body>
+		<div class="centered">
+			<div class="banner" id="banner-hackclub">
+				<a href="https://hackclub.com/">
+					<img src="images/bannerhackclub.svg" alt="Hack Club Banner" />
+				</a>
+			</div>
 
-<body>
-<div class="centered">
-    <div class="banner" id="banner-hackclub" style="width:19%;">
-        <a href="https://hackclub.com/">
-            <img src="images/bannerhackclub.svg" alt="Hack Club Banner">
-        </a>
-    </div>
-        
-    <div class="banner" id="banner-mlh" style="width:10%;">
-        <a href="https://mlh.io/">
-            <img src="images/bannermlh.svg" alt="MLH Banner">
-        </a>
-    <!--a 
-    id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:10px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=yellow" target="_blank">
-    <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-yellow.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%">
-    </a-->
-    </div>
-    
-    <section id="header">
-        <div>
-            <img src="images/logo.svg" alt="Hack Camp Logo">
-            <h1 class="anim">Hack Camp</h1>
-            <h3 class="anim">A Hack Club Original Hackathon</h3>
-            <!--<div class="btnpgh anim"><a href="https://hackcamp.typeform.com/to/epFLlw" class="btn">Apply here</a></div>-->
-            <div class="btnpgh anim" align="center">
-            <button id="devfolio-apply-now" ><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
-            </div>
-            <br>
-            <p class="anim"><font size="4"><img src ="images/calendar.svg" style="width:3%;"> Feb 8 & 9<br><img src ="images/placeholder.svg" style="width:4%;"> Integrated Startup Complex, Kalamassery,Kerala, India</p>
-        </div>
-    </section>
-    <section id="aboutcamp">
-        <h2 class="anim">About Hack Camp</h2>
-        <p class="anim highlight">Create anything you can imagine with code, electronics, 3D models, and more.</p>
-        <div class="icons anim">
-            <img src="images/hackathon.svg" alt="Hackathon Icon">
-            <p class="highlight">36 Hours</p>
-        </div>
-        <div class="icons anim">
-            <img src="images/gift.svg" alt="Gift Icon">
-            <p class="highlight">Exciting prizes</p>
-        </div>
-        <div class="icons anim">
-            <img src="images/swags.svg" alt="Swags Icon">
-            <p class="highlight">Swags</p>
-        </div>
-        <div class="icons anim">
-            <img src="images/pizza.svg" alt="Pizza Icon">
-            <p class="highlight">Free Snacks</p>
-        </div>
-        <p class="anim">Computers give us superpowers. Anyone, anywhere, can create beautiful things and solve real problems for people everywhere.</p>
-        <p class="anim">Learning to code is your way into this world. Crossing this bridge unlocks the power to make stories, drawings, or wires into websites, games, robots, and things nobody but you imagine.</p>
-        <p class="anim">It’s not about learning a programming framework—it’s about learning to teach yourself. Best of all, you can join a worldwide community of people doing the same. This is Hacker Culture, & it brings out the best in us all.</p>
-    </section>
-    <section id="history">
-        <h2 class="anim">A brief history of Hack Camp</h2>
-        <p class="anim highlight">2015</p>
-        <p class="anim">Hack Club is born</p>
-        <p class="anim">Hack Camp began as an experiment to discover new ways of teaching coding at our clubs around the world.</p>
-        <div class="vl anim"></div>
-        <p class="anim highlight">2015</p>
-        <p class="anim">First Hack Camp in SF</p>
-        <div class="vl anim"></div>
-        <p class="anim highlight">2016</p>
-        <p class="anim">SF Hack Camp v2</p>
-        <div class="vl anim"></div>
-        <p class="anim highlight">2017</p>
-        <p class="anim">A Camp appears in Mason, OH</p>
-        <div class="vl anim"></div>
-        <p class="anim highlight">2018</p>
-        <p class="anim">Camp runs again in Mason</p>
-        <div class="vl anim"></div>
-        <p class="anim highlight">2018</p>
-        <p class="anim">A Camp appears in Kerala, India</p>
-        <div class="vl long anim"></div>
-        <p class="anim highlight">2019</p>
-        <p class="anim">SF Hack Camp v3</p>
-        <div class="vl anim"></div>
-        <p class="anim highlight">2020</p>
-        <p class="anim">Hack Camp returns to Kerala</p>
-    </section>
-    <!-- <section id="schedule">
+			<div class="banner" id="banner-mlh">
+				<a href="https://mlh.io/">
+					<img src="images/bannermlh.svg" alt="MLH Banner" />
+				</a>
+			</div>
+
+			<section id="header">
+				<div>
+					<img src="images/logo.svg" alt="Hack Camp Logo" />
+					<h1 class="anim">Hack Camp</h1>
+					<h3 class="anim">A Hack Club Original Hackathon</h3>
+					<div class="btnpgh anim">
+						<button id="devfolio-apply-now">
+							<img src='images/devfolio.svg'> Apply with Devfolio
+						</button>
+					</div>
+					<br />
+					<p class="anim">
+						<img src="images/calendar.svg" style="width:3%;" /> Feb 8 & 9<br /><img
+							src="images/placeholder.svg"
+							style="width:4%;"
+						/>
+						Integrated Startup Complex, Kalamassery,Kerala, India
+					</p>
+				</div>
+			</section>
+			<section id="aboutcamp">
+				<h2 class="anim">About Hack Camp</h2>
+				<p class="anim highlight">
+					Create anything you can imagine with code, electronics, 3D models, and
+					more.
+				</p>
+				<div class="icons anim">
+					<img src="images/hackathon.svg" alt="Hackathon Icon" />
+					<p class="highlight">36 Hours</p>
+				</div>
+				<div class="icons anim">
+					<img src="images/gift.svg" alt="Gift Icon" />
+					<p class="highlight">Exciting prizes</p>
+				</div>
+				<div class="icons anim">
+					<img src="images/swags.svg" alt="Swags Icon" />
+					<p class="highlight">Swags</p>
+				</div>
+				<div class="icons anim">
+					<img src="images/pizza.svg" alt="Pizza Icon" />
+					<p class="highlight">Free Snacks</p>
+				</div>
+				<p class="anim">
+					Computers give us superpowers. Anyone, anywhere, can create beautiful
+					things and solve real problems for people everywhere.
+				</p>
+				<p class="anim">
+					Learning to code is your way into this world. Crossing this bridge
+					unlocks the power to make stories, drawings, or wires into websites,
+					games, robots, and things nobody but you imagine.
+				</p>
+				<p class="anim">
+					It’s not about learning a programming framework—it’s about learning to
+					teach yourself. Best of all, you can join a worldwide community of
+					people doing the same. This is Hacker Culture, & it brings out the
+					best in us all.
+				</p>
+			</section>
+			<section id="history">
+				<h2 class="anim">A brief history of Hack Camp</h2>
+				<p class="anim highlight">2015</p>
+				<p class="anim">Hack Club is born</p>
+				<p class="anim">
+					Hack Camp began as an experiment to discover new ways of teaching
+					coding at our clubs around the world.
+				</p>
+				<div class="vl anim"></div>
+				<p class="anim highlight">2015</p>
+				<p class="anim">First Hack Camp in SF</p>
+				<div class="vl anim"></div>
+				<p class="anim highlight">2016</p>
+				<p class="anim">SF Hack Camp v2</p>
+				<div class="vl anim"></div>
+				<p class="anim highlight">2017</p>
+				<p class="anim">A Camp appears in Mason, OH</p>
+				<div class="vl anim"></div>
+				<p class="anim highlight">2018</p>
+				<p class="anim">Camp runs again in Mason</p>
+				<div class="vl anim"></div>
+				<p class="anim highlight">2018</p>
+				<p class="anim">A Camp appears in Kerala, India</p>
+				<div class="vl long anim"></div>
+				<p class="anim highlight">2019</p>
+				<p class="anim">SF Hack Camp v3</p>
+				<div class="vl anim"></div>
+				<p class="anim highlight">2020</p>
+				<p class="anim">Hack Camp returns to Kerala</p>
+			</section>
+			<!-- <section id="schedule">
         <h2 class="anim">Schedule</h2>
         <div class="day">
             <h3 class="anim">Day 1</h3>
@@ -147,30 +179,28 @@
             <p class="anim">05PM Results Announcement</p>
         </div>
     </section> -->
-    <section id="tracks">
-        <h2 class="anim">Tracks</h2>
-        <div class="icons anim">
-            <img src="images/iot.svg" alt="Hackathon Icon">
-            <p class="highlight">IoT</p>
-        </div>
-        <div class="icons anim">
-            <img src="images/ai.svg" alt="Cash Icon">
-            <p class="highlight">AI</p>
-        </div>
-        <!--<div class="icons anim">
-            <img src="images/blockchain.svg" alt="Swags Icon">
-            <p class="highlight">Blockchain</p>
-        </div>-->
-        <div class="icons anim">
-            <img src="images/vr.svg" alt="Pizza Icon">
-            <p class="highlight">AR & VR</p>
-        </div>
-        <div class="icons anim">
-            <img src="images/infinity.svg" alt="Pizza Icon">
-            <p class="highlight">Openhack<br /><small>(any other domains)</small></p>
-        </div>
-    </section>
-    <!-- <section id="speakers">
+			<section id="tracks">
+				<h2 class="anim">Tracks</h2>
+				<div class="icons anim">
+					<img src="images/iot.svg" alt="Hackathon Icon" />
+					<p class="highlight">IoT</p>
+				</div>
+				<div class="icons anim">
+					<img src="images/ai.svg" alt="Cash Icon" />
+					<p class="highlight">AI</p>
+				</div>
+				<div class="icons anim">
+					<img src="images/vr.svg" alt="Pizza Icon" />
+					<p class="highlight">AR & VR</p>
+				</div>
+				<div class="icons anim">
+					<img src="images/infinity.svg" alt="Pizza Icon" />
+					<p class="highlight">
+						Openhack<br /><small>(any other domains)</small>
+					</p>
+				</div>
+			</section>
+			<!-- <section id="speakers">
         <h2>Speakers and Guests</h2>
         <div class="item">
             <picture class="anim">
@@ -215,371 +245,524 @@
             <h3>Anto Patrex</h3>
         </div>
     </section> -->
-    <section id="faq">
-        <h2 class="anim">FAQ</h2>
-        <div class="item">
-            <h3 class="anim">What is a Hackathon?</h3>
-            <p class="anim">A hackathon can be best described as an “invention marathon”, or in simple words hackathons are about bringing your crazy ideas to reality. It’s an event where any tech-enthusiast, regardless of their individual field can come & participate to learn, build & share their creations over the course of a weekend, in a relaxed & productive environment. Hackathons are simply a venue for self-expression & creativity, where people come together & transform their thoughts into reality, through technology. </p>
-        </div>
-        <div class="item">
-            <h3 class="anim">What about Internet?</h3>
-            <p class="anim">You're advised to bring your own broadband/hotspot device as we can arrange for atmost one connection per team. </p>
-        </div>
-        <div class="item">
-            <h3 class="anim">How big a team can be?</h3>
-            <p class="anim">The maximum team size is four and lone rangers are also welcome. Participants selected on an individual basis and can team up on the spot as well.</p>
-        </div>
-        <div class="item">
-            <h3 class="anim">Who all can participate?</h3>
-            <p class="anim">This is a student hackathon and only students are allowed to participate. You’ll be required to verify at the event by showing your student ID card. </p>
-        </div>
-        <div class="item">
-            <h3 class="anim">Do I have to be qualified?</h3>
-            <p class="anim">If you love to code, you are more than welcome to participate in the Hackathon. Though we may screen applications to maintain high standards. </p>
-        </div>
-        <div class="item">
-            <h3 class="anim">I'm a newbie can I hack?</h3>
-            <p class="anim">Of course you can! We at Hack Camp ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community. </p>
-        </div>
-        <div class="item">
-            <h3 class="anim">Can I start hacking before the event?</h3>
-            <p class="anim">No. In the interest of fairness, students should not be working on their projects before Hack Camp begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand!</p>
-        </div>
-        <div class="item">
-            <h3 class="anim">Wait, my question isn't here?</h3>
-            <p class="anim">If you couldn't find an answer to your question please do send your queries to <a href="mailto:help@hackcamp.tech">help@hackcamp.tech</a>.</p>
-        </div>
-    </section>
-    <section id="team">
-        <h2 class="anim">Team</h2>
-        <div class="item">
-            <picture class="anim">
-                <source srcset="images/athul.webp" type="image/webp">
-                <img src="images/athul.jpg" alt="Athul photo">
-            </picture>
-            <h3>Athul</h3>
-        </div>
-        <div class="item">
-            <picture class="anim">
-                <source srcset="images/annlee.webp" type="image/webp">
-                <img src="images/annlee.jpg" alt="Annlee photo">
-            </picture>
-            <h3>Annlee</h3>
-        </div>
-        <div class="item">
-            <picture class="anim">
-                <source srcset="images/jagannath.webp" type="image/webp">
-                <img src="images/jagannath.jpg" alt="Jagannath photo">
-            </picture>
-            <h3>Jagannath</h3>
-        </div>
-        <div class="item">
-            <picture class="anim">
-                <source srcset="images/arun.webp" type="image/webp">
-                <img src="images/arun.jpg" alt="Arjun photo">
-            </picture>
-            <h3>Arun</h3>
-        </div>
-        <div class="item">
-            <picture class="anim">
-                <source srcset="images/arjun.webp" type="image/webp">
-                <img src="images/arjun.jpg" alt="Arjun photo">
-            </picture>
-            <h3>Arjun</h3>
-        </div>
-    </section>
-    <section id="codeofconduct">
-        <h2 class="anim">Code Of Conduct</h2>
-        <div class="btnpgh anim"><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" class="btn">Code Of Conduct</a></div>
-    </section>
+			<section id="faq">
+				<h2 class="anim">FAQ</h2>
+				<div class="item">
+					<h3 class="anim">What is a Hackathon?</h3>
+					<p class="anim">
+						A hackathon can be best described as an “invention marathon”, or in
+						simple words hackathons are about bringing your crazy ideas to
+						reality. It’s an event where any tech-enthusiast, regardless of
+						their individual field can come & participate to learn, build &
+						share their creations over the course of a weekend, in a relaxed &
+						productive environment. Hackathons are simply a venue for
+						self-expression & creativity, where people come together & transform
+						their thoughts into reality, through technology.
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">What about Internet?</h3>
+					<p class="anim">
+						You're advised to bring your own broadband/hotspot device as we can
+						arrange for atmost one connection per team.
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">How big a team can be?</h3>
+					<p class="anim">
+						The maximum team size is four and lone rangers are also welcome.
+						Participants selected on an individual basis and can team up on the
+						spot as well.
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">Who all can participate?</h3>
+					<p class="anim">
+						This is a student hackathon and only students are allowed to
+						participate. You’ll be required to verify at the event by showing
+						your student ID card.
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">Do I have to be qualified?</h3>
+					<p class="anim">
+						If you love to code, you are more than welcome to participate in the
+						Hackathon. Though we may screen applications to maintain high
+						standards.
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">I'm a newbie can I hack?</h3>
+					<p class="anim">
+						Of course you can! We at Hack Camp ensure that no one is left behind
+						during the hacking, thanks to our mentors and volunteers who help us
+						achieve the same. We make sure that you learn the best you can
+						alongside having fun and experiencing what it feels to belong to a
+						community.
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">Can I start hacking before the event?</h3>
+					<p class="anim">
+						No. In the interest of fairness, students should not be working on
+						their projects before Hack Camp begins and we do not allow
+						participants to work on pre-existing projects. However, you can
+						familiarize yourself with all the tools and technologies you intend
+						to use beforehand!
+					</p>
+				</div>
+				<div class="item">
+					<h3 class="anim">Wait, my question isn't here?</h3>
+					<p class="anim">
+						If you couldn't find an answer to your question please do send your
+						queries to
+						<a href="mailto:help@hackcamp.tech">help@hackcamp.tech</a>.
+					</p>
+				</div>
+			</section>
+			<section id="team">
+				<h2 class="anim">Team</h2>
+				<div class="item">
+					<picture class="anim">
+						<source srcset="images/athul.webp" type="image/webp" />
+						<img src="images/athul.jpg" alt="Athul photo" />
+					</picture>
+					<h3>Athul</h3>
+				</div>
+				<div class="item">
+					<picture class="anim">
+						<source srcset="images/annlee.webp" type="image/webp" />
+						<img src="images/annlee.jpg" alt="Annlee photo" />
+					</picture>
+					<h3>Annlee</h3>
+				</div>
+				<div class="item">
+					<picture class="anim">
+						<source srcset="images/jagannath.webp" type="image/webp" />
+						<img src="images/jagannath.jpg" alt="Jagannath photo" />
+					</picture>
+					<h3>Jagannath</h3>
+				</div>
+				<div class="item">
+					<picture class="anim">
+						<source srcset="images/arun.webp" type="image/webp" />
+						<img src="images/arun.jpg" alt="Arjun photo" />
+					</picture>
+					<h3>Arun</h3>
+				</div>
+				<div class="item">
+					<picture class="anim">
+						<source srcset="images/arjun.webp" type="image/webp" />
+						<img src="images/arjun.jpg" alt="Arjun photo" />
+					</picture>
+					<h3>Arjun</h3>
+				</div>
+			</section>
+			<section id="codeofconduct">
+				<h2 class="anim">Code Of Conduct</h2>
+				<div class="btnpgh anim">
+					<a
+						href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+						target="_blank"
+						class="btn"
+						>Code Of Conduct</a
+					>
+				</div>
+			</section>
 
-    <section id="codeofconduct">
-        <h2 class="anim">Gallery</h2>
-        <div class="slideshow-container">
+			<section id="codeofconduct">
+				<h2 class="anim">Gallery</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 22</div>
+						<img src="photos/0.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">1 / 22</div>
-        <img src="photos/0.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 22</div>
+						<img src="photos/1.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">2 / 22</div>
-        <img src="photos/1.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 22</div>
+						<img src="photos/2.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">3 / 22</div>
-        <img src="photos/2.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 22</div>
+						<img src="photos/3.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">4 / 22</div>
-        <img src="photos/3.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 22</div>
+						<img src="photos/4.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">5 / 22</div>
-        <img src="photos/4.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">6 / 22</div>
+						<img src="photos/5.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">6 / 22</div>
-        <img src="photos/5.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">7 / 22</div>
+						<img src="photos/6.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">7 / 22</div>
-        <img src="photos/6.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">8 / 22</div>
+						<img src="photos/7.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">8 / 22</div>
-        <img src="photos/7.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">9 / 22</div>
+						<img src="photos/8.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">9 / 22</div>
-        <img src="photos/8.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">10 / 22</div>
+						<img src="photos/9.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">10 / 22</div>
-        <img src="photos/9.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">11 / 22</div>
+						<img src="photos/10.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">11 / 22</div>
-        <img src="photos/10.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">12 / 22</div>
+						<img src="photos/11.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">12 / 22</div>
-        <img src="photos/11.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">13 / 22</div>
+						<img src="photos/12.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">13 / 22</div>
-        <img src="photos/12.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">14 / 22</div>
+						<img src="photos/13.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">14 / 22</div>
-        <img src="photos/13.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">15 / 22</div>
+						<img src="photos/14.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">15 / 22</div>
-        <img src="photos/14.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">16 / 22</div>
+						<img src="photos/15.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">16 / 22</div>
-        <img src="photos/15.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">17 / 22</div>
+						<img src="photos/16.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">17 / 22</div>
-        <img src="photos/16.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">18 / 22</div>
+						<img src="photos/17.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">18 / 22</div>
-        <img src="photos/17.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">19 / 22</div>
+						<img src="photos/18.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">19 / 22</div>
-        <img src="photos/18.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">20 / 22</div>
+						<img src="photos/19.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">20 / 22</div>
-        <img src="photos/19.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">21 / 22</div>
+						<img src="photos/20.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">21 / 22</div>
-        <img src="photos/20.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">22 / 22</div>
+						<img src="photos/21.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">22 / 22</div>
-        <img src="photos/21.jpg" style="width:100%">
-        </div>
+					<div class="mySlides fade">
+						<div class="numbertext">22 / 22</div>
+						<img src="photos/22.jpg" style="width:100%" />
+					</div>
 
-        <div class="mySlides fade">
-        <div class="numbertext">22 / 22</div>
-        <img src="photos/22.jpg" style="width:100%">
-        </div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br />
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+					<span class="dot" onclick="currentSlide(7)"></span>
+					<span class="dot" onclick="currentSlide(8)"></span>
+					<span class="dot" onclick="currentSlide(9)"></span>
+					<span class="dot" onclick="currentSlide(10)"></span>
+					<span class="dot" onclick="currentSlide(11)"></span>
+					<span class="dot" onclick="currentSlide(12)"></span>
+					<span class="dot" onclick="currentSlide(13)"></span>
+					<span class="dot" onclick="currentSlide(14)"></span>
+					<span class="dot" onclick="currentSlide(15)"></span>
+					<span class="dot" onclick="currentSlide(16)"></span>
+					<span class="dot" onclick="currentSlide(17)"></span>
+					<span class="dot" onclick="currentSlide(18)"></span>
+					<span class="dot" onclick="currentSlide(19)"></span>
+					<span class="dot" onclick="currentSlide(20)"></span>
+					<span class="dot" onclick="currentSlide(21)"></span>
+					<span class="dot" onclick="currentSlide(22)"></span>
+				</div>
+			</section>
 
-        </div>
-        <br>
-
-        <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-        <span class="dot" onclick="currentSlide(4)"></span> 
-        <span class="dot" onclick="currentSlide(5)"></span> 
-        <span class="dot" onclick="currentSlide(6)"></span> 
-        <span class="dot" onclick="currentSlide(7)"></span> 
-        <span class="dot" onclick="currentSlide(8)"></span> 
-        <span class="dot" onclick="currentSlide(9)"></span> 
-        <span class="dot" onclick="currentSlide(10)"></span> 
-        <span class="dot" onclick="currentSlide(11)"></span> 
-        <span class="dot" onclick="currentSlide(12)"></span> 
-        <span class="dot" onclick="currentSlide(13)"></span> 
-        <span class="dot" onclick="currentSlide(14)"></span> 
-        <span class="dot" onclick="currentSlide(15)"></span> 
-        <span class="dot" onclick="currentSlide(16)"></span> 
-        <span class="dot" onclick="currentSlide(17)"></span> 
-        <span class="dot" onclick="currentSlide(18)"></span> 
-        <span class="dot" onclick="currentSlide(19)"></span> 
-        <span class="dot" onclick="currentSlide(20)"></span> 
-        <span class="dot" onclick="currentSlide(21)"></span> 
-        <span class="dot" onclick="currentSlide(22)"></span> 
-        </div>
-    </section>
-
-
-    <section id="sponsors">
-        <h1 class="anim">Title Sponsors</h1>
-        <a class="sponsor anim" href="https://hackclub.com" target="_blank">
-            <img src="images/hc.svg" alt="Hack Club Logo">
-        </a>
-        <a class="sponsor anim" href="https://mlh.io" target="_blank" style="width:150px;">
-            <img src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg" alt="MLH Logo">
-        </a>
-        <a class="sponsor anim" href="https://github.com" target="_blank">
-            <img src="images/github.png" alt="GitHub Logo">
-        </a>
-        <!--
+			<section id="sponsors">
+				<h1 class="anim">Title Sponsors</h1>
+				<a class="sponsor anim" href="https://hackclub.com" target="_blank">
+					<img src="images/hc.svg" alt="Hack Club Logo" />
+				</a>
+				<a
+					class="sponsor anim"
+					href="https://mlh.io"
+					target="_blank"
+					style="width:150px;"
+				>
+					<img
+						src="https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg"
+						alt="MLH Logo"
+					/>
+				</a>
+				<a class="sponsor anim" href="https://github.com" target="_blank">
+					<img src="images/github.png" alt="GitHub Logo" />
+				</a>
+				<!--
          <a class="sponsor anim" href="https://cloudsploit.com/" target="_blank">
             <img src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="Cloudsploit Logo">
         </a>-->
-        <h2 class="anim">Other Sponsors</h2>
-        <a class="sponsor anim" href="https://startupmission.kerala.gov.in/" target="_blank" style="width:180px;">
-            <img src="images/ksum.png" alt="KSUM Logo">
-        </a>
-        <a class="sponsor anim" href="https://startupmission.kerala.gov.in/" target="_blank" style="width:180px;">
-            <img src="https://static.mlh.io/brand-assets/sponsors/sticker-mule/sticker-mule-logo.svg" alt="KSUM Logo">
-        </a>
-        <!--<a class="sponsor anim" href="https://codingblocks.com" target="_blank" style="width:150px;">
+				<h2 class="anim">Other Sponsors</h2>
+				<a
+					class="sponsor anim"
+					href="https://startupmission.kerala.gov.in/"
+					target="_blank"
+					style="width:180px;"
+				>
+					<img src="images/ksum.png" alt="KSUM Logo" />
+				</a>
+				<a
+					class="sponsor anim"
+					href="https://startupmission.kerala.gov.in/"
+					target="_blank"
+					style="width:180px;"
+				>
+					<img
+						src="https://static.mlh.io/brand-assets/sponsors/sticker-mule/sticker-mule-logo.svg"
+						alt="KSUM Logo"
+					/>
+				</a>
+				<!--<a class="sponsor anim" href="https://codingblocks.com" target="_blank" style="width:150px;">
             <img src="images/CB.png" alt="Coding Blocks Logo">
         </a>-->
-         <a class="sponsor anim" href="https://balsamiq.com" target="_blank">
-            <img src="https://media.balsamiq.com/files/company/balsamiq-logo-noborder-print.svg" alt="Balsamiq Logo" style="width:180px;">
-        </a>
-        <a class="sponsor anim" href="https://community.makergram.com/" target="_blank" style="width:180px">
-            <img src="https://www.matrix.one/assets/imgs/projects/hackster-logo.png" alt="Hackster Logo">
-        </a>
-        <a class="sponsor anim" href="https://devfolio.co" target="_blank" style="width:180px;">
-            <img src="images/devfolio.svg" alt="Devfolio Logo">
-        </a>
-        <br>
-        <a class="sponsor anim" href="https://codingblocks.com" target="_blank" style="width:120px;">
-            <img src="images/CB.png" alt="Coding Blocks Logo">
-        </a>
-        <a class="sponsor anim" href="https://cloudsploit.com/" target="_blank" style="width:120px;">
-            <img src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="Cloudsploit Logo">
-        </a>
-        <a class="sponsor anim" href="https://cloudsploit.com/" target="_blank" style="width:120px;">
-            <img src="images/matic.png" alt="Cloudsploit Logo">
-        </a>
+				<a class="sponsor anim" href="https://balsamiq.com" target="_blank">
+					<img
+						src="https://media.balsamiq.com/files/company/balsamiq-logo-noborder-print.svg"
+						alt="Balsamiq Logo"
+						style="width:180px;"
+					/>
+				</a>
+				<a
+					class="sponsor anim"
+					href="https://community.makergram.com/"
+					target="_blank"
+					style="width:180px"
+				>
+					<img
+						src="https://www.matrix.one/assets/imgs/projects/hackster-logo.png"
+						alt="Hackster Logo"
+					/>
+				</a>
+				<a
+					class="sponsor anim"
+					href="https://devfolio.co"
+					target="_blank"
+					style="width:180px;"
+				>
+					<img src="images/devfolio.svg" alt="Devfolio Logo" />
+				</a>
+				<br />
+				<a
+					class="sponsor anim"
+					href="https://codingblocks.com"
+					target="_blank"
+					style="width:120px;"
+				>
+					<img src="images/CB.png" alt="Coding Blocks Logo" />
+				</a>
+				<a
+					class="sponsor anim"
+					href="https://cloudsploit.com/"
+					target="_blank"
+					style="width:120px;"
+				>
+					<img
+						src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png"
+						alt="Cloudsploit Logo"
+					/>
+				</a>
+				<a
+					class="sponsor anim"
+					href="https://cloudsploit.com/"
+					target="_blank"
+					style="width:120px;"
+				>
+					<img src="images/matic.png" alt="Cloudsploit Logo" />
+				</a>
 
-        <div class="btnpgh anim"><a href="mailto:help@hackcamp.tech" target="_blank" class="btn">Become a Sponsor</a></div>
-        <p><a href="docs/sponsorship_prospectus.pdf" target="_blank" class="anim highlight">Download Sponsorship Prospectus</a></p>
-    </section>
-    <section id="about">
-        <h2 class="anim">About Hack Club</h2>
-        <p class="anim">Hack club is a global network of programming clubs where members learn to code through tinkering and building projects. Computers give us superpowers. Hands on experiences are so important. Real-world experience with code is so important! Learning to code is your way into this world. Crossing this bridge unlocks the power to make stories, drawings, or wires into websites, games, robots, and things nobody but you imagine. It’s not about learning a programming framework—it’s about learning to teach yourself. Best of all, you can join a worldwide community of people doing the same. This hacker culture brings out the best in us all.</p>
-    </section>
-    <section id="contact">
-        <h2 class="anim">For any queries</h2>
-        <p class="anim"><a href="mailto:help@hackcamp.tech">help@hackcamp.tech</a></p>
-    </section>
-    <section id="about">
-        <footer>
-        <div style="width:50%;margin:0 auto;">
-        <h2 class="anim">Social Media </h2>
-        <a class="anim" href="https://facebook.com/hackcamp2020" target="_blank"> <img src ="images/facebook.svg" class="anim" style="width:40px;"></a>
-        <a class="anim" href="https://twitter.com/hackcamp2020" target="_blank" style="margin-left:5%"><img src ="images/twitter.svg" class="anim" style="width:40px;"></a>
-        <a class="anim" href="https://www.instagram.com/hackcamp2020/" target="_blank" style="margin-left:5%"><img src ="images/instagram.svg" class="anim" style="width:40px;"></a>
-        </div>
-        </footer>
-    </section>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    let devfolioOptions = {
-        buttonSelector: '#devfolio-apply-now',
-        key: 'hack-camp',
-    }
+				<div class="btnpgh anim">
+					<a href="mailto:help@hackcamp.tech" target="_blank" class="btn"
+						>Become a Sponsor</a
+					>
+				</div>
+				<p>
+					<a
+						href="docs/sponsorship_prospectus.pdf"
+						target="_blank"
+						class="anim highlight"
+						>Download Sponsorship Prospectus</a
+					>
+				</p>
+			</section>
+			<section id="about">
+				<h2 class="anim">About Hack Club</h2>
+				<p class="anim">
+					Hack club is a global network of programming clubs where members learn
+					to code through tinkering and building projects. Computers give us
+					superpowers. Hands on experiences are so important. Real-world
+					experience with code is so important! Learning to code is your way
+					into this world. Crossing this bridge unlocks the power to make
+					stories, drawings, or wires into websites, games, robots, and things
+					nobody but you imagine. It’s not about learning a programming
+					framework—it’s about learning to teach yourself. Best of all, you can
+					join a worldwide community of people doing the same. This hacker
+					culture brings out the best in us all.
+				</p>
+			</section>
+			<section id="contact">
+				<h2 class="anim">For any queries</h2>
+				<p class="anim">
+					<a href="mailto:help@hackcamp.tech">help@hackcamp.tech</a>
+				</p>
+			</section>
+			<section id="about">
+				<footer>
+					<div style="width:50%;margin:0 auto;">
+						<h2 class="anim">Social Media</h2>
+						<a
+							class="anim"
+							href="https://facebook.com/hackcamp2020"
+							target="_blank"
+						>
+							<img src="images/facebook.svg" class="anim" style="width:40px;"
+						/></a>
+						<a
+							class="anim"
+							href="https://twitter.com/hackcamp2020"
+							target="_blank"
+							style="margin-left:5%"
+							><img src="images/twitter.svg" class="anim" style="width:40px;"
+						/></a>
+						<a
+							class="anim"
+							href="https://www.instagram.com/hackcamp2020/"
+							target="_blank"
+							style="margin-left:5%"
+							><img src="images/instagram.svg" class="anim" style="width:40px;"
+						/></a>
+					</div>
+				</footer>
+			</section>
+		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				let devfolioOptions = {
+					buttonSelector: '#devfolio-apply-now',
+					key: 'hack-camp'
+				}
 
-    let script = document.createElement('script');
-    script.src = "https://apply.devfolio.co";
-    document.head.append(script);
+				let script = document.createElement('script')
+				script.src = 'https://apply.devfolio.co'
+				document.head.append(script)
 
-    script.onload = function () {
-        new Devfolio(devfolioOptions);
-    }
+				script.onload = function() {
+					new Devfolio(devfolioOptions)
+				}
 
-    script.onerror = function () {
-        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-        });
-    }
-});
-        let animate = () => {
-            document.querySelectorAll('.anim, .banner').forEach(e => {
-                if ((e.offsetTop - window.innerHeight / 1.2) < (window.scrollY || window.pageYOffset)) {
-                    e.classList.add('animate')
-                }
-            })
-        }
-        let faqreveal = (e) => {
-            e.nextElementSibling.classList.toggle('reveal')
-        }
-        let OneSignal = window.OneSignal || [];
-        OneSignal.push(() => OneSignal.init({ appId: "bb6ebcbf-3a50-46c7-a6a6-01c052d3321f" }))
-        animate()
-        window.onscroll = animate
-        window.onresize = animate
-        document.querySelectorAll('#faq h3').forEach(e => {
-            e.addEventListener('click', () => {
-                faqreveal(e)
-            })
-        })
-        var slideIndex = 1;
-showSlides(slideIndex);
+				script.onerror = function() {
+					document
+						.querySelector(devfolioOptions.buttonSelector)
+						.addEventListener('click', function() {
+							window.location.href =
+								'https://devfolio.co/external-apply/' + devfolioOptions.key
+						})
+				}
+			})
+			let animate = () => {
+				document.querySelectorAll('.anim, .banner').forEach(e => {
+					if (
+						e.offsetTop - window.innerHeight / 1.2 <
+						(window.scrollY || window.pageYOffset)
+					) {
+						e.classList.add('animate')
+					}
+				})
+			}
+			let faqreveal = e => {
+				e.nextElementSibling.classList.toggle('reveal')
+			}
+			let OneSignal = window.OneSignal || []
+			OneSignal.push(() =>
+				OneSignal.init({ appId: 'bb6ebcbf-3a50-46c7-a6a6-01c052d3321f' })
+			)
+			animate()
+			window.onscroll = animate
+			window.onresize = animate
+			document.querySelectorAll('#faq h3').forEach(e => {
+				e.addEventListener('click', () => {
+					faqreveal(e)
+				})
+			})
+			var slideIndex = 1
+			showSlides(slideIndex)
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+			function plusSlides(n) {
+				showSlides((slideIndex += n))
+			}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+			function currentSlide(n) {
+				showSlides((slideIndex = n))
+			}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-    </script>
-</body>
-
+			function showSlides(n) {
+				var i
+				var slides = document.getElementsByClassName('mySlides')
+				var dots = document.getElementsByClassName('dot')
+				if (n > slides.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = 'none'
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(' active', '')
+				}
+				slides[slideIndex - 1].style.display = 'block'
+				dots[slideIndex - 1].className += ' active'
+			}
+		</script>
+	</body>
 </html>
