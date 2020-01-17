@@ -6,23 +6,16 @@ body {
 	margin: 0;
 }
 #devfolio-apply-now {
-	-ms-flex-align: left;
-	-webkit-box-align: left;
-	align-items: left;
 	background-color: #3770ff;
 	border-radius: 3px;
 	border: none;
 	color: #ffffff;
 	cursor: pointer;
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display: flex;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
 		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	font-size: 18px;
 	font-weight: 600;
 	padding: 12px 20px;
-	text-align: center;
 	text-transform: lowercase;
 }
 
@@ -33,6 +26,11 @@ body {
 #devfolio-apply-now:hover {
 	background-color: #2954bf !important;
 }
+
+#devfolio-apply-now svg {
+	vertical-align: middle;
+}
+
 .mySlides {
 	display: none;
 }
