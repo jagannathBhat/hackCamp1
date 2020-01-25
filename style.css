@@ -517,7 +517,8 @@ section {
 
 #team .item,
 #speakers .item {
-	display: inline-block;
+	display: block;
+	float:left;
 	margin: 24px 48px;
 	max-width: 180px;
 	width: 84vw;
