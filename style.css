@@ -591,6 +591,7 @@ section {
   	}
 	#one{
 		width:auto;
+		align-content:center;
 
 	}
 	#two{
