@@ -539,7 +539,6 @@ section {
 }
 #one{
 	width:40%;
-	float:left; 
 	vertical-align: top;
 }
 #two{
@@ -592,7 +591,6 @@ section {
 	#one{
 		width:auto;
 		align-content:center;
-
 	}
 	#two{
 		width:100%;
