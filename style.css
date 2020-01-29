@@ -24,15 +24,17 @@
   padding: 16px;
   text-align: center;
   background: rgba(37, 36,41, 0.7);
-  height: 400px;
+  height: 450px;
   border-radius: 25px;
+  overflow:auto;
 
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background: rgba(37, 36,41, 0.7);
-  height: 400px;
+  height: 450px;
   border-radius: 25px;
+  overflow:auto;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -430,9 +432,8 @@ section {
 .icons {
 	display: inline-block;
 	margin: 48px 24px;
-	text-align: center;
 	vertical-align: top;
-	width: 120px;
+	width: 100px;
 }
 
 .icons img {
@@ -536,12 +537,39 @@ section {
 	vertical-align: middle;
 	width: 82vw;
 }
-
+#one{
+	width:40%;
+	float:left; 
+	vertical-align: top;
+}
+#two{
+	width:40%;
+	margin-left:20%;
+	vertical-align: top;
+}
 #sponsors .sponsor img {
 	height: 100%;
 	width: 100%;
 }
-
+.container{
+  display:inline-flex;
+  flex-wrap:wrap;
+  width:80%;
+}
+.flex-direction{
+  flex-direction:row;
+}
+#leftie{
+	float:left;
+	margin-left:0%;
+}
+#rightie{
+	float:right;
+}
+#emily{
+	float:left;
+	margin-right:40px;
+}
 @media only screen and (min-width: 600px) {
 	.banner#banner-hackclub {
 		max-width: 18vw;
@@ -554,4 +582,32 @@ section {
 	#header {
 		margin-top: 0px;
 	}
+
+}
+@media only screen and (max-width: 600px) {
+
+	  .flex-direction{
+  		flex-direction:column;
+  	}
+	#one{
+		width:auto;
+
+	}
+	#two{
+		width:100%;
+		text-align:left;
+		margin-left:0%;
+	}
+	#leftie{
+		float:none;
+		margin-right:0%;
+	}
+	#rightie{
+	float:none;
+
+	}
+	#emily{
+		float:none;
+	}
+
 }
